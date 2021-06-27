@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kyiv</title>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+	<header><h1>Brewery Finder<h1>
+
+	<div class="brew_finder">
+
+<script type="text/javascript">
+	function showPage() {
+		 var sel = document.getElementById('subjects');
+		 var option = sel.options[sel.selectedIndex].value;
+		 window.open(option + ".html");
+	}
+</script>
+
+			<select size="1" id="subjects" class="select_city select_find_common">
+				<option disabled selected >Select a city</option>
+				<option value="Kyiv">Kyiv</option>
+				<option value="Luhansk">Luhansk</option>
+				<option value="Odesa">Odesa</option>		
+			</select>
+			<input type="submit"  value="Find" onclick="showPage()"  class="button select_find_common">
+			
+		</div>
+	
+
+	</header>
+
+
+
+
+
+
+
+
+
+	<main>
+
+		<div class="slider middle">
+<!-- 			<input checked type="radio" name="respond" id="desktop"> --><!-- 
+		<section class="slider"> -->
+			<div class="slides">
+
+					<input checked type="radio" name="slider" id="switch1">
+					<input  type="radio" name="slider" id="switch2">
+					<input  type="radio" name="slider" id="switch3">
+					<input  type="radio" name="slider" id="switch4">
+					<input  type="radio" name="slider" id="switch5">
+			
+								
+					<div class="images_slide s1"><img src="kyiv4.png"></div>					
+					<div class="images_slide s2"><img src="kyiv1.png"></div>					
+					<div class="images_slide s3"><img src="kyiv2.png"></div>					
+					<div class="images_slide s4"><img src="kyiv3.png"></div>					
+					<div class="images_slide s5"><img src="kyiv5.png"></div>					
+							
+			</div>
+
+			<div class="navigation">
+				<label for="switch1" class="bar"></label>
+				<label for="switch2" class="bar"></label>
+				<label for="switch3" class="bar"></label>
+				<label for="switch4" class="bar"></label>
+				<label for="switch5" class="bar"></label>
+			</div>
+<!-- 			<div id="arrows_active">
+				<label for="switch1"></label>
+				<label for="switch2"></label>
+				<label for="switch3"></label>
+				<label for="switch4"></label>
+			</div> -->
+
+		<!-- </section> -->
+		
+		</div>
+
+	</main>
+
+
+
+</body>
+</html>

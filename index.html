@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brewery Finder</title>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<header><h1>Brewery Finder<h1>
+				<div class="brew_finder">
+
+<script type="text/javascript">
+	function showPage() {
+		 var sel = document.getElementById('subjects');
+		 var option = sel.options[sel.selectedIndex].value;
+		 window.open(option + ".html");
+	}
+</script>
+
+			<select size="1" id="subjects" class="select_city select_find_common">
+				<option disabled selected >Select a city</option>
+				<option value="Kyiv">Kyiv</option>
+				<option value="Luhansk">Luhansk</option>
+				<option value="Odesa">Odesa</option>		
+			</select>
+			<input type="submit"  value="Find" onclick="showPage()"  class="button select_find_common">
+			
+		</div>
+
+	</header>
+
+	<main>
+
+		<div class="love_or_brew">
+			<div class="love_or_brew_common"><h3 class="love_beer">I love beer</h3></div>
+			<div class="love_or_brew_common"><h3 class="brew_beer">I brew beer</h3></div>
+		</div>
+
+		<section>
+			<article class="main_page_article">
+
+				<h3>Craft Beer Near Me</h3> 
+
+	<p>One of the great things about the independent beer scene is the variety of craft beer options you can enjoy. Whether it’s a brew pub down the street, a microbrewery that’s getting a lot of buzz, or a nano brewery that just opened, there is always a new craft brewery to try, and we want to make finding those places easy. We’ve given you the option to search by state, click on the “breweries near me” button or search for a brewery or brew pub by name, city or state. Not only will you get directions to craft breweries, but also the ability to connect with the brewery itself to learn more. Rather than keep looking for "craft breweries near me" on a search engine, seek them out quickly and easily here!</p>	
+
+
+				<h3>Find a Brewery Tools</h3>  
+
+	<p>The newest brewery might be a lot closer than you think, and our “Find a Brewery” map is designed to show you just how close your new favorite small brewery may be. Our craft brewery list is up to date and we are bringing the data straight to you.<p/>
+
+	<p>The objective of our website is to help our readers learn about craft beer and independent breweries. Whether it involves pointing you toward the information that you need, helping you discover the beers that grab your attention, or helping you find the newest craft beer company near you, we want to provide you with all the craft beer information you can handle. Our “Find a Brewery” tool is designed to help you find independent craft breweries so that you can continue to explore the wonderful world of craft beer.</p>
+
+	<p>If you enjoy the website and are interested in a convenient way to find your new or old favorite craft beer company – whether it’s a brew pub down the block or microbrewery 20 minutes away -- sign up to have our newsletter delivered directly to your inbox.</p>
+
+			</article>
+		</section>
+
+		<section class="title_map">
+			<div><h2>find a brewery near me</h2></div>
+		</section>
+
+		
+<div id="map"><img src="map.JPG"></div>
+<!-- <script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(50.450001, 30.523333), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+ -->
+
+		<!-- <iframe src="https://www.google.com/maps/@?api=1&map_action=map&center=50.450001,30.523333"></iframe> -->
+
+
+<!-- 		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfVF8Gx__D_V_-EZ_Gasw5_lsNA_8wfU&callback=myMap" async defer></script> -->
+
+	</main>
+
+
+	<footer><div>FOOTER</div></footer>
+
+<div class="popup_outer ">
+		<div class="popup_div">
+
+			<a class="close_popup" >X</a>
+			<div id="sign_in_up">
+				<div id="sign_in"><h2 class="active sign_common">SIGN IN</h2></div>
+				<div id="sign_up"><h2 class="sign_common">SIGN UP</h2></div>
+			</div>
+			<div id="img">
+				<img src="icons8-beer-64.png">		
+			</div>
+			<div id="form">			
+				<form>
+				<input type="email" name="" placeholder="email" required maxlength="45" class="field form_common">
+				<input type="password" name="" placeholder="password" 
+				pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*$" required minlength="8" maxlength="25" title="at least 1 uppercase, 1 lowercase, 1 digit, 1 special character and have a length of at least of 8 " class="field form_common">
+				<input type="submit" name="" value="LOG IN" class="button form_common">
+				</form>
+			</div>
+			<div class="forgot_pass">
+				<h3 class="forgot_pass_inner">Forgot Password?</h3>
+			</div>
+
+		</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('.love_beer').on('click', function(){
+		$('.popup_outer').addClass('active');
+		});
+		$('.close_popup').on('click', function(){
+		$('.popup_outer').removeClass('active');
+		});
+	</script>
+
+
+</body>
+</html>

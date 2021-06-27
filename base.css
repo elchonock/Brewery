@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+	background-color: #F7F7F7;
+	font-family: 'Abel', sans-serif;
+}
+
+header {
+	text-align: center;
+	height: 250px;
+	font-variant: small-caps;
+	font-size: 35px;
+	/*background-color: #F5B553;*/
+	background-image: url(1.jpg);
+}
+
+.brew_finder {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*background-color: #F5B553;*/
+	color: #F7F7F7;
+	height: 200px;
+	/*background-image: url(2.jpg);*/
+
+
+}
+
+.select_find_common{
+	border-radius: 5px;
+	border-style: none;
+	font-size: 20px;
+	height: 35px;
+}
+
+.select_city  {
+	text-align: center;
+	padding: 5px;
+	background-color: #F7F7F7;
+	color: black;
+	margin: 5px;
+	width: 200px;
+
+}
+
+.button {
+	text-align: center;
+	padding: 5px;
+	background-color: #F7F7F7;
+	color: black;
+	margin: 5px;
+	width: 200px;
+}
+
+
+
+
+
+
+
+.love_or_brew {		
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+.love_or_brew_common{
+	width: 250px;
+	height: 100px;
+	background-color: #917F73;
+	display: block;	
+	margin: 45px 10px;
+	text-align: center;
+	font-size: 1.5em;
+	position: relative;
+	border-radius: 5px;
+}
+
+.love_or_brew_common::before {
+	content: "";
+	background-color: #D9D9D7;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transform: scale(0.5);
+	transition: 0.4s;
+	border-radius: 5px;
+	
+}
+
+.love_or_brew_common:hover::before {	
+
+	transform: scale(1.1);
+}
+
+.love_or_brew_common:hover{
+	cursor: pointer;
+	background-color: #D9D9D7;
+	color: #4D2C25;
+}
+
+
+
+
+
+
+.main_page_article h3{
+	text-align:center;
+}
+.main_page_article{
+	font-size: 1.25em;
+	width: 85%;
+	margin: auto;
+}
+
+.title_map {
+	text-align:center;
+	font-variant: small-caps;
+	font-size: 1.5em;
+	background-color: #B2A39C;
+}
+
+#map {
+	text-align:center;
+}
