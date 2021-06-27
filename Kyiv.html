@@ -8,23 +8,23 @@
 </head>
 <body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-	<header><h1>Brewery Finder<h1>
-
+	<header><a href="index.html"><h1>Brewery Finder<h1></a>
 	<div class="brew_finder">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script type="text/javascript">
 	function showPage() {
 		 var sel = document.getElementById('subjects');
 		 var option = sel.options[sel.selectedIndex].value;
-		 window.open(option + ".html");
+		 
+if (option == 'select') {window.open("Kyiv.html")}
+else {window.open(option + ".html")};
 	}
 </script>
 
 			<select size="1" id="subjects" class="select_city select_find_common">
-				<option disabled selected >Select a city</option>
+				<option disabled selected value="select" >Select a city</option>
 				<option value="Kyiv">Kyiv</option>
 				<option value="Luhansk">Luhansk</option>
 				<option value="Odesa">Odesa</option>		
@@ -32,37 +32,27 @@
 			<input type="submit"  value="Find" onclick="showPage()"  class="button select_find_common">
 			
 		</div>
-	
-
 	</header>
-
-
-
-
-
-
 
 
 
 	<main>
 
 		<div class="slider middle">
-<!-- 			<input checked type="radio" name="respond" id="desktop"> --><!-- 
-		<section class="slider"> -->
 			<div class="slides">
 
 					<input checked type="radio" name="slider" id="switch1">
 					<input  type="radio" name="slider" id="switch2">
 					<input  type="radio" name="slider" id="switch3">
 					<input  type="radio" name="slider" id="switch4">
-					<input  type="radio" name="slider" id="switch5">
+					<!-- <input  type="radio" name="slider" id="switch5"> -->
 			
 								
 					<div class="images_slide s1"><img src="kyiv4.png"></div>					
 					<div class="images_slide s2"><img src="kyiv1.png"></div>					
 					<div class="images_slide s3"><img src="kyiv2.png"></div>					
 					<div class="images_slide s4"><img src="kyiv3.png"></div>					
-					<div class="images_slide s5"><img src="kyiv5.png"></div>					
+				<!-- 	<div class="images_slide s5"><img src="kyiv0.png"></div> -->					
 							
 			</div>
 
@@ -71,7 +61,7 @@
 				<label for="switch2" class="bar"></label>
 				<label for="switch3" class="bar"></label>
 				<label for="switch4" class="bar"></label>
-				<label for="switch5" class="bar"></label>
+			<!-- 	<label for="switch5" class="bar"></label> -->
 			</div>
 <!-- 			<div id="arrows_active">
 				<label for="switch1"></label>
@@ -79,12 +69,35 @@
 				<label for="switch3"></label>
 				<label for="switch4"></label>
 			</div> -->
-
-		<!-- </section> -->
 		
 		</div>
 
 	</main>
+
+
+
+<!-- прелоадер -->
+  <div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+
+
+
 
 
 
