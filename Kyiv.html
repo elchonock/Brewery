@@ -11,17 +11,7 @@
 	<header><a href="index.html"><h1>Brewery Finder<h1></a>
 	<div class="brew_finder">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script type="text/javascript">
-	function showPage() {
-		 var sel = document.getElementById('subjects');
-		 var option = sel.options[sel.selectedIndex].value;
-		 
-if (option == 'select') {window.open("Kyiv.html")}
-else {window.open(option + ".html")};
-	}
-</script>
 
 			<select size="1" id="subjects" class="select_city select_find_common">
 				<option disabled selected value="select" >Select a city</option>
@@ -85,6 +75,19 @@ else {window.open(option + ".html")};
     </svg>
   </div>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+	function showPage() {
+		 var sel = document.getElementById('subjects');
+		 var option = sel.options[sel.selectedIndex].value;
+		 
+if (option == 'select') {window.open("Kyiv.html")}
+else {window.open(option + ".html")};
+	}
+</script>
+
   <script>
     window.onload = function () {
       document.body.classList.add('loaded_hiding');
@@ -94,10 +97,6 @@ else {window.open(option + ".html")};
       }, 500);
     }
   </script>
-
-
-
-
 
 
 
